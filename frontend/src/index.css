@@ -1,0 +1,543 @@
+/* globale */
+:root {
+  --yellow-color: rgb(199, 148, 6);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Tajawal", sans-serif;
+  background-color: #eeeeee65;
+}
+.more-btn {
+  background-color: var(--yellow-color);
+  color: white;
+  width: 90px;
+  border: 0;
+  height: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50px;
+  margin: 20px auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* About-us */
+.aboutus {
+  text-align: right;
+  padding: 10px;
+}
+.aboutus > div {
+  line-height: 29px;
+}
+.aboutus h2 {
+  font-size: 18px;
+  color: var(--yellow-color);
+}
+.aboutus > div a {
+  background-color: rgb(51, 116, 51);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  display: block;
+  width: fit-content;
+}
+/* Home */
+.home {
+  margin: 5px;
+  padding-bottom: 80px;
+}
+/* Search */
+.search {
+  background-color: rgba(0, 0, 0, 0.822);
+  color: var(--yellow-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 11px;
+  border-radius: 19px;
+}
+.search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--yellow-color);
+  width: 80%;
+  font-size: 16px;
+}
+.search .fullScreen {
+  position: fixed;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  top: 74px;
+  z-index: 100;
+  left: 0;
+}
+.search .fullScreen > h3 {
+  text-align: center;
+}
+.search .fullScreen a h3 {
+  margin: 20px;
+  background-color: #eeeeee34;
+}
+.search .theSearch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search .theName {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--yellow-color);
+}
+/* Selection */
+.selection {
+  display: flex;
+  overflow: auto;
+  flex-direction: row-reverse;
+  margin: 25px 8px;
+  gap: 20px;
+}
+.selection::-webkit-scrollbar {
+  display: none; /* Chrome و Safari */
+}
+.selection a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+.selection img {
+  width: 90px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+/* Boxs */
+.boxs {
+  margin: 5px;
+  margin-top: 40px;
+}
+.boxs .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.boxs .header a {
+  text-decoration: none;
+  color: var(--yellow-color);
+}
+.boxs .cards {
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: auto;
+  gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.boxs .cards::-webkit-scrollbar {
+  display: none;
+}
+.boxs .cards .card {
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border-radius: 12px;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.boxs .cards .card .discount {
+  position: absolute;
+  background-color: rgb(230, 14, 14);
+  color: white;
+  left: -1px;
+  top: 0px;
+  padding: 1px 6px;
+  border-radius: 12px;
+}
+.boxs .cards .card img {
+  width: 130px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.boxs .cards .card .price {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+  align-items: center;
+}
+.boxs .cards .card .price span {
+  font-weight: 600;
+  color: var(--yellow-color);
+  font-size: 18px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.boxs .cards .card .price span.old {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.432);
+  text-decoration: line-through;
+}
+/* Buttom */
+.buttom {
+  background-color: white;
+  padding: 10px 14px;
+  position: fixed;
+  bottom: 0;
+  width: 97%;
+  color: var(--yellow-color);
+  display: flex;
+  justify-content: space-around;
+}
+.buttom > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--yellow-color);
+}
+.buttom > div svg {
+  font-size: 20px;
+}
+.buttom > div p {
+  font-size: 14px;
+}
+/* section */
+.section {
+  margin: 5px;
+}
+.section h3 {
+  text-align: right;
+  margin: 10px;
+  color: var(--yellow-color);
+}
+.section .boxs .header {
+  display: none;
+}
+.section .boxs .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+/* single */
+.single {
+  padding: 23px;
+  text-align: right;
+  padding-bottom: 180px;
+}
+.single h3 {
+  color: var(--yellow-color);
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.single h3 a {
+  color: #0000008c;
+  margin-left: 30px;
+}
+.single .images {
+  margin-top: 25px;
+}
+.single .images .image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.single .images .image img {
+  width: 320px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.single .images .slider {
+  display: flex;
+  flex-direction: row; /* يخلي الصور تنعرض من اليمين لليسار */
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  direction: rtl; /* يخلي الاسكرول يبلش من اليمين */
+}
+.single .images .slider img {
+  width: 70px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.single .images .slider img.currentimg {
+  border: 2px solid rgba(2, 2, 2, 0.699);
+}
+.single .images .slider::-webkit-scrollbar {
+  display: none; /* Chrome و Safari */
+}
+.single > h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+.single > span {
+  display: block;
+  background: rgba(0, 0, 0, 0.473);
+  width: 100%;
+  height: 1.5px;
+  margin-top: 30px;
+}
+.single > p {
+  position: relative;
+  padding-right: 18px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.single > p::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.568);
+  right: 0px;
+  top: 12px;
+}
+.single .footer {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -24px;
+  padding-top: 10px;
+  padding-bottom: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.single .footer .price {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.single .footer .price span {
+  color: var(--yellow-color);
+  font-size: 20px;
+}
+.single .footer .price p {
+  font-weight: 900;
+}
+.single .footer .conection {
+  background: rgb(10, 202, 35);
+  width: 190px;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.single .footer .updateordelete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+.single .footer .updateordelete .update {
+  background: rgb(10, 202, 35);
+  width: 100px;
+  height: 35px;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single .footer .updateordelete .delete {
+  background: rgb(223, 50, 6);
+  width: 100px;
+  height: 35px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+
+/* --------------- Admin -------------- */
+.admin-page {
+  margin: 20px;
+}
+
+/* --------------- User -------------- */
+/* login */
+.login form,
+.add-section-page form {
+  background-color: rgba(0, 0, 0, 0.822);
+  width: 80%;
+  margin: 40% auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  gap: 20px;
+  color: white;
+}
+.login form input,
+.add-section-page form input {
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+}
+.login form button,
+.add-section-page form button {
+  margin: 0 auto;
+  width: 120px;
+  height: 32px;
+}
+.login form .error,
+.add-section-page .error {
+  color: var(--yellow-color);
+  text-align: center;
+}
+.login form a {
+  color: var(--yellow-color);
+}
+.add-section-page div {
+  background-color: white;
+  color: black;
+  border-radius: 18px;
+}
+/* home */
+/* selection */
+.selection .add-section > div {
+  width: 90px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+  border-radius: 12px;
+  font-size: 60px;
+}
+.selection > div {
+  position: relative;
+}
+.selection .for-user {
+  position: absolute;
+  background-color: #db4242b6;
+  padding: 5px 8px;
+  color: white;
+  border-radius: 50%;
+  font-size: 15px;
+}
+.selection a.for-user {
+  background-color: rgba(11, 148, 29, 0.644);
+  right: 0;
+  padding: 7px 8px;
+}
+/* boxs */
+.boxs .add-product {
+  background: var(--yellow-color);
+  color: white;
+  padding: 10px 15px;
+  margin: 20px auto;
+  display: block;
+  width: fit-content;
+  border-radius: 12px;
+}
+/* addProductPage */
+.add-product {
+  text-align: right;
+}
+.add-product form {
+  background-color: rgba(0, 0, 0, 0.822);
+  width: 80%;
+  margin: 10% auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  gap: 20px;
+  color: white;
+}
+.add-product form label {
+  display: block;
+  margin-bottom: 7px;
+}
+.add-product form input {
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  width: 100%;
+}
+.add-product label.section-select {
+  display: flex;
+  align-items: center;
+}
+.add-product form button {
+  margin: 0 auto;
+  width: 120px;
+  height: 32px;
+}
+.add-product .image input {
+  display: none;
+}
+.add-product .image label {
+  background-color: rgb(91 91 91);
+  color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+}
+.add-product .image .add {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.add-product .image .add .img {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.add-product .image .add .img img {
+  border-radius: 10px;
+}
+.add-product .image .add button {
+  position: absolute;
+  width: fit-content;
+  padding: 7px 10px;
+  border-radius: 20px;
+  border: none;
+  top: 0;
+  right: 0;
+  color: white;
+  background: rgba(180, 5, 5, 0.596);
+}
+
+.add-product .error {
+  color: var(--yellow-color);
+  text-align: center;
+}
