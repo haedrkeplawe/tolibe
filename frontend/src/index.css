@@ -124,6 +124,9 @@ a {
   object-fit: cover;
   width: 80px;
 }
+.selection a h4 {
+  text-align: center;
+}
 /* Boxs */
 .boxs {
   margin: 5px;
