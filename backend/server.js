@@ -15,6 +15,13 @@ app.use((req, res, next) => {
   next();
 });
 
+// Self-Ping كل 5 دقايق
+setInterval(() => {
+  fetch("https://tolibe.netlify.app/") // غيرها برابط سيرفرك على Render
+    .then(res => console.log("Pinged self with status:", res.status))
+    .catch(err => console.error("Ping failed:", err));
+}, 5 * 60 * 1000); // كل 5 دقايق
+
 v2.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
